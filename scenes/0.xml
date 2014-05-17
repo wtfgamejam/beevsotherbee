@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="9" extheight="800" extwidth="1344" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="85.0" height="736" id="0" name="Level Space" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1280">
+<scene depth="1" desc="" eventsnippetid="9" extheight="800" extwidth="1344" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="50.0" height="736" id="0" name="Space" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1280">
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
@@ -12,14 +12,27 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="13" name="Flappy Bird 1" sx="1.0" sy="1.0" x="77" y="89" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="3" id="13" name="Bee 1" sx="1.0" sy="1.0" x="108" y="261" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="22" name="Other Bee 2" sx="1.0" sy="1.0" x="1102" y="65" z="0"/>
     </actors>
     <snippets>
+        <s enabled="true" id="16">
+            <prop id="1" list="1" val=""/>
+            <prop id="5" list="0" val="Default Font"/>
+            <prop id="6" list="0" val="true"/>
+            <prop id="7" list="0" val="0.0"/>
+            <prop id="8" list="0" val="0.0"/>
+            <prop id="9" list="0" val="-1"/>
+            <prop id="10" list="0" val=""/>
+            <prop id="11" list="1" val=""/>
+        </s>
         <s enabled="true" id="12">
             <prop id="1" list="0" val="0.0"/>
             <prop id="2" list="0" val="true"/>
             <prop id="3" list="0" val="16"/>
         </s>
     </snippets>
-    <terrain/>
+    <terrain>
+        <p pts="4,1280.0,96.0,0.0,96.0,0.0,0.0,1280.0,0.0" x="0.0" y="640.0"/>
+    </terrain>
 </scene>

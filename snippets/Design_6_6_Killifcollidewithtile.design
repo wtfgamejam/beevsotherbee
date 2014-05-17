@@ -16,9 +16,6 @@
                     <int id="2" val="0"/>
                     <int id="3" val="0.1"/>
                 </scene-reload-new>
-                <set-game-val-0 comment="false" x="26" y="128">
-                    <int id="0" val="0"/>
-                </set-game-val-0>
             </group>
             <ACTOR eid="this" id="0"/>
             <GROUP eid="1" id="1"/>

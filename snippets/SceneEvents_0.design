@@ -1,2 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="37" y="72">
+                            <ACTOR eid="1" id="0"/>
+                        </die>
+                        <die comment="false" x="37" y="99">
+                            <ACTOR eid="2" id="0"/>
+                        </die>
+                        <play-sound4 comment="false" x="37" y="126">
+                            <int id="0" val="0"/>
+                            <SOUND eid="26" id="1"/>
+                        </play-sound4>
+                        <scene-reload-new comment="false" x="37" y="153">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0.1"/>
+                        </scene-reload-new>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-9-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <else comment="false" x="26" y="192">
+                    <group eventID="1" id="-1">
+                        <incdec comment="false" x="37" y="212">
+                            <int id="0" val="1"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-9-1 comment="false" x="26" y="40">
+                    <int id="0" val="30"/>
+                </set-val-9-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="29" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <get-val-9-1 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="640"/>
+                    <int id="2" val="10"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

@@ -62,19 +62,47 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_0 extends SceneScript
+class Design_20_20_KeepBeeOnScreen extends ActorScript
 {          	
 	
  
- 	public function new(dummy:Int, engine:Engine)
+ 	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
-		super(engine);
-		
+		super(actor, engine);	
+		nameMap.set("Actor", "actor");
+
 	}
 	
 	override public function init()
 	{
-		
+		    
+/* ======================== When Updating ========================= */
+addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void {
+if(wrapper.enabled){
+        if((actor.getScreenX() < 0))
+{
+            actor.setX(1);
+}
+
+        else if((actor.getScreenX() > (getScreenWidth() - (actor.getWidth()))))
+{
+            actor.setX(((getScreenWidth() - (actor.getWidth())) - 1));
+}
+
+}
+});
+    
+/* ======================== When Updating ========================= */
+addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void {
+if(wrapper.enabled){
+        if((actor.getY() < 0))
+{
+            actor.setY(0);
+}
+
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

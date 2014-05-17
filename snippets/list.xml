@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
-    <snippet attachedevent="true" class="scripts.ActorEvents_0" classname="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="0" language="" name="ActorEvents_0" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_AsteroidsMovement" classname="scripts.Design_1_1_AsteroidsMovement" desc="Allows the actor to move like the spaceship in the Asteroids game. The actor will be able to turn and accelerate forward or backward." description="Allows the actor to move like the spaceship in the Asteroids game. The actor will be able to turn and accelerate forward or backward." design="true" drawOrder="0" id="1" language="" name="Asteroids Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <boolean default="true" defaultValue="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="71" name="_UseAnimations" order="22"/>
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Turn Left Animation" hidden="false" id="77" name="_TurnLeftAnimation" order="26"/>
@@ -42,10 +38,6 @@
             <event displayName="Custom Event" enabled="true" id="8" name="event-custom" order="7" repeats="true"/>
             <event displayName="Custom Event" enabled="true" id="9" name="event-custom" order="8" repeats="true"/>
         </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_2" classname="scripts.ActorEvents_2" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" language="" name="ActorEvents_2" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_3_3_TapToFly" classname="scripts.Design_3_3_TapToFly" desc="" description="" design="true" drawOrder="0" id="3" language="" name="Tap To Fly" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
@@ -87,8 +79,13 @@
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="9" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Time" hidden="false" id="1" name="_Time" order="0"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_10_10_8WayMovement" classname="scripts.Design_10_10_8WayMovement" desc="Allows the actor to move up, down, left and right as well as in diagonal directions." description="Allows the actor to move up, down, left and right as well as in diagonal directions." design="true" drawOrder="0" id="10" language="" name="8 Way Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <control default="" defaultValue="" desc="" dropdown="" fullname="Right Control" hidden="false" id="34" name="_RightControl" order="8"/>
@@ -143,18 +140,6 @@
         <events>
             <event displayName="Click" enabled="true" id="1" name="event-mouse-press-release" order="1" repeats="true"/>
         </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_3" classname="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="14" language="" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" scenespecific="true" shared="false" type="scene">
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="SceneNumber" hidden="false" id="1" name="_SceneNumber" order="0"/>
-        <blocks/>
-        <events>
-            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="15" language="" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" scenespecific="true" shared="false" type="scene">
-        <blocks/>
-        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_17_17_OnScreenButton" classname="scripts.Design_17_17_OnScreenButton" desc="A button to simulate key presses/releases." description="A button to simulate key presses/releases." design="true" drawOrder="0" id="17" language="" name="On Screen Button" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <animation default="" defaultValue="" desc="Animation for the button in an unpressed state." dropdown="" fullname="Normal Animation" hidden="false" id="1" name="_NormalAnimation" order="6"/>
@@ -212,7 +197,63 @@
             <event displayName="RemoveHUDIndex" enabled="true" id="13" name="event-custom-block" order="13" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_22" classname="scripts.ActorEvents_22" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="19" language="" name="ActorEvents_22" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_20" classname="scripts.ActorEvents_20" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" language="" name="ActorEvents_20" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_21_21_2WayHorizontalMovement" classname="scripts.Design_21_21_2WayHorizontalMovement" desc="Allows the actor to move left and right." description="Allows the actor to move left and right." design="true" drawOrder="0" id="21" language="" name="2 Way Horizontal Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <control default="" defaultValue="" desc="" dropdown="" fullname="Right Control" hidden="false" id="34" name="_RightControl" order="5"/>
+        <control default="" defaultValue="" desc="" dropdown="" fullname="Left Control" hidden="false" id="33" name="_LeftControl" order="4"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events. &#10;Trigger the events &lt;var&gt;MoveLeft&lt;/var&gt; or &lt;var&gt;MoveRight&lt;/var&gt; to make the actor move as if the keys were pressed." dropdown="" fullname="Use Controls" hidden="false" id="38" name="_UseControls" order="3"/>
+        <boolean default="false" defaultValue="false" desc="If selected, the actor will not be able to move vertically." dropdown="" fullname="Prevent Vertical Movement" hidden="false" id="39" name="_PreventVerticalMovement" order="7"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Move X" hidden="true" id="37" name="_MoveX" order="1"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="42" name="_LeftAnimation" order="11"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation (Idle)" hidden="false" id="43" name="_RightAnimationIdle" order="12"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Start Y" hidden="true" id="40" name="_StartY" order="2"/>
+        <number default="30.0" defaultValue="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="11" name="_Speed" order="6"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="4" name="event-custom" order="6" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="5" name="event-custom" order="7" repeats="true"/>
+            <event displayName="Created" enabled="true" id="6" name="init" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_20_20_KeepBeeOnScreen" classname="scripts.Design_20_20_KeepBeeOnScreen" desc="" description="" design="true" drawOrder="0" id="20" language="" name="Keep Bee On Screen" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="WIDTH" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="HEIGHT" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_23_23_DrawHealth" classname="scripts.Design_23_23_DrawHealth" desc="" description="" design="true" drawOrder="0" id="23" language="" name="Draw Health" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Blinking" hidden="false" id="1" name="_Blinking" order="1"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_22_22_PlaySound" classname="scripts.Design_22_22_PlaySound" desc="" description="" design="true" drawOrder="0" id="22" language="" name="Play Sound" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <number default="0.0" defaultValue="0.0" desc="The channel at which to play the music. Must be between 0 and 31 inclusive." dropdown="" fullname="Channel" hidden="false" id="1" name="_Channel" order="1"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the sound on the selected channel will be stopped before the music starts." dropdown="" fullname="Stop Channel First" hidden="false" id="2" name="_StopChannelFirst" order="2"/>
+        <sound default="" defaultValue="" desc="" dropdown="" fullname="Sound to Play" hidden="false" id="3" name="_SoundtoPlay" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_27" classname="scripts.ActorEvents_27" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="24" language="" name="ActorEvents_27" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>

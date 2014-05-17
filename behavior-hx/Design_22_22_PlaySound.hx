@@ -62,32 +62,37 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_3_3_TapToFly extends ActorScript
+class Design_22_22_PlaySound extends SceneScript
 {          	
 	
+public var _Channel:Float;
+
+public var _StopChannelFirst:Bool;
+
+public var _SoundtoPlay:Sound;
+
  
- 	public function new(dummy:Int, actor:Actor, engine:Engine)
+ 	public function new(dummy:Int, engine:Engine)
 	{
-		super(actor, engine);	
-		nameMap.set("Actor", "actor");
+		super(engine);
+		nameMap.set("Channel", "_Channel");
+_Channel = 0.0;
+nameMap.set("Stop Channel First", "_StopChannelFirst");
+_StopChannelFirst = true;
+nameMap.set("Sound to Play", "_SoundtoPlay");
 
 	}
 	
 	override public function init()
 	{
 		    
-/* ============================ Click ============================= */
-addMousePressedListener(function(list:Array<Dynamic>):Void {
-if(wrapper.enabled){
-        playSound(getSound(26));
-        actor.setVelocity(-90, 30);
-        if((Utils.DEG * (actor.getAngle()) > -90))
+/* ======================== When Creating ========================= */
+        if(_StopChannelFirst)
 {
-            actor.rotate(-Utils.RAD * (randomInt(Math.floor(15), Math.floor(35))));
+            stopSoundOnChannel(Std.int(_Channel));
 }
 
-}
-});
+        playSoundOnChannel(_SoundtoPlay, Std.int(_Channel));
 
 	}	      	
 	

@@ -78,7 +78,7 @@ class SceneEvents_2 extends SceneScript
 /* ============================ Click ============================= */
 addMousePressedListener(function(list:Array<Dynamic>):Void {
 if(wrapper.enabled){
-        switchScene(3, createFadeOut((0.5)),createFadeIn((0.5)));
+        switchScene(0, createFadeOut((0.5)),createFadeIn((0.5)));
 }
 });
 

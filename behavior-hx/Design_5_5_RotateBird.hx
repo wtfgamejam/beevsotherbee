@@ -81,12 +81,7 @@ addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Vo
 if(wrapper.enabled){
         if((actor.getYVelocity() <= -10))
 {
-            actor.setAngle(Utils.RAD * (-90));
-}
-
-        else if((actor.getYVelocity() >= 10))
-{
-            actor.setAngle(Utils.RAD * (90));
+            actor.rotate(-Utils.RAD * (randomInt(Math.floor(5), Math.floor(10))));
 }
 
 }

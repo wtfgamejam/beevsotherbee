@@ -62,29 +62,19 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_4_4_BirdLeaveScene extends ActorScript
+class ActorEvents_27 extends ActorScript
 {          	
 	
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		nameMap.set("Actor", "actor");
-
+		
 	}
 	
 	override public function init()
 	{
-		    
-/* ======================== Specific Actor ======================== */
-addActorPositionListener(actor, function(enteredScreen:Bool, exitedScreen:Bool, enteredScene:Bool, exitedScene:Bool, list:Array<Dynamic>):Void {
-if(wrapper.enabled && exitedScreen){
-        recycleActor(actor);
-        playSound(getSound(26));
-        reloadCurrentScene(createFadeOut((1)),createFadeIn((0.1)));
-}
-});
-
+		
 	}	      	
 	
 	override public function forwardMessage(msg:String)
