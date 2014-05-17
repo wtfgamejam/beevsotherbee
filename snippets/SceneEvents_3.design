@@ -67,7 +67,7 @@
                     <FONT id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="121">
-                    <int id="0" val=""/>
+                    <get-val-14-1 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="0"/>
                     <int id="2" val="0"/>
                 </draw-text>
