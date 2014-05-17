@@ -7,7 +7,10 @@
     <backgrounds/>
     <foregrounds/>
     <joints/>
-    <regions/>
+    <regions>
+        <region b="64" g="64" h="404" id="0" name="SPACE" pts="4,1313.0,0.0,1313.0,404.0,0.0,404.0,0.0,0.0" r="64" type="box" w="1313" x="-20" y="-9"/>
+        <region b="64" g="64" h="397" id="1" name="FIELD" pts="4,1367.0,0.0,1367.0,397.0,0.0,397.0,0.0,0.0" r="64" type="box" w="1367" x="-42" y="395"/>
+    </regions>
     <terrainRegions/>
     <actors/>
     <snippets>

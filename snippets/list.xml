@@ -10,8 +10,8 @@
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Turn Right Animation" hidden="false" id="79" name="_TurnRightAnimation" order="27"/>
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Idle Animation" hidden="false" id="72" name="_IdleAnimation" order="23"/>
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Push Forward Animation" hidden="false" id="73" name="_PushForwardAnimation" order="24"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Push Backward Animation" hidden="false" id="75" name="_PushBackwardAnimation" order="25"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="true" defaultValue="true" desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events.&lt;br /&gt;&#10;Trigger the events  &lt;var&gt;PushForward&lt;/var&gt;, &lt;var&gt;PushBackward&lt;/var&gt;, &lt;var&gt;TurnLeft&lt;/var&gt; or &lt;var&gt;TurnRight&lt;/var&gt; to make the actor move as if the keys were pressed." dropdown="" fullname="Use Controls" hidden="false" id="81" name="_UseControls" order="10"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Backward" hidden="true" id="83" name="_Backward" order="3"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Forward" hidden="true" id="82" name="_Forward" order="2"/>
@@ -148,6 +148,12 @@
         <blocks/>
         <events>
             <event displayName="Click" enabled="true" id="1" name="event-mouse-press-release" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="15" language="" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
