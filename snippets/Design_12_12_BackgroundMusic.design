@@ -12,7 +12,12 @@
                     </group>
                     <get-val-12-2 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <play-sound-channel comment="false" x="26" y="109">
+                <fade-sound-channel comment="false" x="26" y="109">
+                    <int id="0" val="0"/>
+                    <get-val-12-1 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="3"/>
+                </fade-sound-channel>
+                <play-sound-channel comment="false" x="26" y="141">
                     <int id="0" val="1"/>
                     <SOUND eid="var" id="1" vid="3"/>
                     <get-val-12-1 comment="false" id="2" x="0" y="0"/>

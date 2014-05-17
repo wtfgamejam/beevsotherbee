@@ -18,7 +18,7 @@
     <snippets>
         <s enabled="true" id="16">
             <prop id="1" list="1" val=""/>
-            <prop id="5" list="0" val="Default Font"/>
+            <prop id="5" list="0" val="-1"/>
             <prop id="6" list="0" val="true"/>
             <prop id="7" list="0" val="0.0"/>
             <prop id="8" list="0" val="0.0"/>
