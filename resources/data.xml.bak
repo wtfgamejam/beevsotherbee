@@ -10,8 +10,8 @@
                 <prop id="79" list="0" val=""/>
                 <prop id="72" list="0" val=""/>
                 <prop id="73" list="0" val=""/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="75" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="81" list="0" val="true"/>
                 <prop id="83" list="0" val="false"/>
                 <prop id="82" list="0" val="false"/>
@@ -97,8 +97,8 @@
                 <prop id="79" list="0" val=""/>
                 <prop id="72" list="0" val=""/>
                 <prop id="73" list="0" val=""/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="75" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="81" list="0" val="true"/>
                 <prop id="83" list="0" val="false"/>
                 <prop id="82" list="0" val="false"/>
@@ -123,5 +123,17 @@
             </s>
         </snippets>
     </actor>
+    <custom-block blocktag="custom-19" blocktype="ACTION" code="" desc="Removes the given index from the HUD." global="false" gui="Remove index %0 from the HUD" id="19" message="RemoveHUDIndex" name="RemoveHUDIndex" oid="-1" return="VOID" shared="false" snippetID="16">
+        <blank name="Index" order="0" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-17" blocktype="NORMAL" code="" desc="Returns a created actor from the Draw HUD behavior." global="false" gui="Get HUD actor with name %0" id="17" message="ReturnHUDActor" name="ReturnHUDActor" oid="-1" return="ACTOR" shared="false" snippetID="16">
+        <blank name="Name" order="0" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-18" blocktype="ACTION" code="" desc="Sets an item to the HUD." global="false" gui="Set index %1 to %0 at x: %2 y: %3 for the HUD" id="18" message="SetHUDIndex" name="SetHUDIndex" oid="-1" return="VOID" shared="false" snippetID="16">
+        <blank name="Item" order="0" type="TEXT"/>
+        <blank name="Index" order="1" type="NUMBER"/>
+        <blank name="X" order="2" type="NUMBER"/>
+        <blank name="Y" order="3" type="NUMBER"/>
+    </custom-block>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="6" name="stripes" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="480" xpf="1.0" ypf="1.0"/>
 </pack>

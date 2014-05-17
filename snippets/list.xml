@@ -10,8 +10,8 @@
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Turn Right Animation" hidden="false" id="79" name="_TurnRightAnimation" order="27"/>
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Idle Animation" hidden="false" id="72" name="_IdleAnimation" order="23"/>
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Push Forward Animation" hidden="false" id="73" name="_PushForwardAnimation" order="24"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Push Backward Animation" hidden="false" id="75" name="_PushBackwardAnimation" order="25"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Push Backward Animation" hidden="false" id="75" name="_PushBackwardAnimation" order="25"/>
         <boolean default="true" defaultValue="true" desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events.&lt;br /&gt;&#10;Trigger the events  &lt;var&gt;PushForward&lt;/var&gt;, &lt;var&gt;PushBackward&lt;/var&gt;, &lt;var&gt;TurnLeft&lt;/var&gt; or &lt;var&gt;TurnRight&lt;/var&gt; to make the actor move as if the keys were pressed." dropdown="" fullname="Use Controls" hidden="false" id="81" name="_UseControls" order="10"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Backward" hidden="true" id="83" name="_Backward" order="3"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Forward" hidden="true" id="82" name="_Forward" order="2"/>
@@ -145,7 +145,7 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_3" classname="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="14" language="" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" scenespecific="true" shared="false" type="scene">
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="SceneNumber" hidden="false" id="1" name="_SceneNumber" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="SceneNumber" hidden="false" id="1" name="_SceneNumber" order="0"/>
         <blocks/>
         <events>
             <event displayName="Click" enabled="true" id="1" name="event-mouse-press-release" order="1" repeats="true"/>
@@ -156,5 +156,61 @@
     <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="15" language="" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_17_17_OnScreenButton" classname="scripts.Design_17_17_OnScreenButton" desc="A button to simulate key presses/releases." description="A button to simulate key presses/releases." design="true" drawOrder="0" id="17" language="" name="On Screen Button" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <animation default="" defaultValue="" desc="Animation for the button in an unpressed state." dropdown="" fullname="Normal Animation" hidden="false" id="1" name="_NormalAnimation" order="6"/>
+        <animation default="" defaultValue="" desc="Animation for the button in an pressed-down state." dropdown="" fullname="Pressed Animation" hidden="false" id="2" name="_PressedAnimation" order="7"/>
+        <control default="" defaultValue="" desc="The control that this button maps to." dropdown="" fullname="Control" hidden="false" id="3" name="_Control" order="5"/>
+        <boolean default="false" defaultValue="false" desc="If selected, the actor will be killed in web or desktop games." dropdown="" fullname="Show Only in Mobile Games" hidden="false" id="5" name="_ShowOnlyinMobileGames" order="11"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Down" hidden="true" id="6" name="_Down" order="1"/>
+        <boolean default="false" defaultValue="false" desc="If selected, the button will be pressed if slide the mouse/finger over the button, and it will simulate a key release if you slide the mouse/finger off.&lt;br/&gt;&#10;Otherwise, the button will only be pressed if you click/touch it directly and sliding off the button will not simulate a key release." dropdown="" fullname="Allow Slide" hidden="false" id="8" name="_AllowSlide" order="10"/>
+        <animation default="" defaultValue="" desc="Animation for the button in a focused state. Not used in mobile games." dropdown="" fullname="Hover Animation" hidden="false" id="9" name="_HoverAnimation" order="8"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="Touching IDs" hidden="true" id="10" name="_TouchingIDs" order="2"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="On Self" hidden="true" id="11" name="_OnSelf" order="3"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Was Touching" hidden="true" id="12" name="_WasTouching" order="4"/>
+        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="Enable Multi-Touch" hidden="false" id="13" name="_EnableMultiTouch" order="9"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Multi-Touch" enabled="true" id="17" name="event-device-multitouch" order="12" repeats="true"/>
+            <event displayName="Multi-Touch" enabled="true" id="16" name="event-device-multitouch" order="13" repeats="true"/>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Multi-Touch" enabled="true" id="18" name="event-device-multitouch" order="14" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="8" name="event-mouse-enter-exit-actor" order="3" repeats="false"/>
+            <event displayName="On Actor" enabled="true" id="9" name="event-mouse-enter-exit-actor" order="4" repeats="false"/>
+            <event displayName="On Actor" enabled="true" id="14" name="event-mouse-enter-exit-actor" order="9" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="15" name="event-mouse-enter-exit-actor" order="8" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_16_16_DrawHUD" classname="scripts.Design_16_16_DrawHUD" desc="This behavior draws text and numbers on screen, as well as creating actors and anchor them to the screen. It comes with custom blocks for adding and removing HUD elements on the fly, as well as logic to get the actors created with this behavior. &lt;br&gt;&lt;br&gt;&#10;Triggers:&lt;br&gt;&#10;- StartDrawingHUD: Trigger to enable drawing for this behavior. It will also create the actors, if applicable.&lt;br&gt;&#10;- StopDrawingHUD: Trigger to disable drawing for this behavior. It will also kill all the created actors, if applicable.&lt;br&gt;" description="This behavior draws text and numbers on screen, as well as creating actors and anchor them to the screen. It comes with custom blocks for adding and removing HUD elements on the fly, as well as logic to get the actors created with this behavior. &lt;br&gt;&lt;br&gt;&#10;Triggers:&lt;br&gt;&#10;- StartDrawingHUD: Trigger to enable drawing for this behavior. It will also create the actors, if applicable.&lt;br&gt;&#10;- StopDrawingHUD: Trigger to disable drawing for this behavior. It will also kill all the created actors, if applicable.&lt;br&gt;" design="true" drawOrder="0" id="16" language="" name="Draw HUD" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <list default="list" defaultValue="list" desc="List of items to draw on screen.&lt;br&gt;&lt;br&gt;&#10;Add [Actor] before your entry to create an actor type with that name. The created actor will be anchored to the screen. After the item's name, fill it with the X and Y position on screen, separated by a comma.&lt;br&gt;&lt;br&gt;&#10;Example:&lt;br&gt;&#10;[Actor]Money Icon,10,5" dropdown="" fullname="Items to Draw" hidden="false" id="1" name="_ItemstoDraw" order="1"/>
+        <font default="" defaultValue="" desc="Font used to draw." dropdown="" fullname="Font" hidden="false" id="5" name="_Font" order="6"/>
+        <boolean default="false" defaultValue="false" desc="If checked, will start the scene drawing the HUD." dropdown="" fullname="Draw HUD" hidden="false" id="6" name="_DrawHUD" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="X" hidden="true" id="7" name="_X" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Y" hidden="true" id="8" name="_Y" order="5"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Actor Type" hidden="true" id="9" name="_ActorType" order="7"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="Actor Name" hidden="true" id="10" name="_ActorName" order="8"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="Created Actors List" hidden="true" id="11" name="_CreatedActorsList" order="10"/>
+        <blocks>
+            <receiver blockID="0" id="1"/>
+            <receiver blockID="1" id="2"/>
+            <receiver blockID="17" id="3"/>
+            <receiver blockID="3" id="4"/>
+            <receiver blockID="4" id="5"/>
+            <receiver blockID="7" id="6"/>
+            <receiver blockID="8" id="7"/>
+            <receiver blockID="18" id="8"/>
+            <receiver blockID="19" id="9"/>
+        </blocks>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="5" repeats="true"/>
+            <event displayName="StartDrawingHUD" enabled="true" id="5" name="event-custom" order="10" repeats="true"/>
+            <event displayName="StopDrawingHUD" enabled="true" id="6" name="event-custom" order="11" repeats="true"/>
+            <event displayName="CreateActors" enabled="true" id="7" name="event-custom" order="2" repeats="true"/>
+            <event displayName="ReturnHUDActor" enabled="true" id="8" name="event-custom-block" order="14" repeats="true"/>
+            <event displayName="SetHUDIndex" enabled="true" id="12" name="event-custom-block" order="12" repeats="true"/>
+            <event displayName="RemoveHUDIndex" enabled="true" id="13" name="event-custom-block" order="13" repeats="true"/>
+        </events>
     </snippet>
 </pack>
