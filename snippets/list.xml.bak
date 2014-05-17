@@ -40,10 +40,11 @@
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_3_3_TapToFly" classname="scripts.Design_3_3_TapToFly" desc="" description="" design="true" drawOrder="0" id="3" language="" name="Tap To Fly" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <control default="" defaultValue="" desc="" dropdown="" fullname="Flap" hidden="false" id="1" name="_Flap" order="1"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
-            <event displayName="Click" enabled="true" id="1" name="event-mouse-press-release" order="1" repeats="true"/>
+            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_4_4_BirdLeaveScene" classname="scripts.Design_4_4_BirdLeaveScene" desc="" description="" design="true" drawOrder="0" id="4" language="" name="Bird Leave Scene" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">

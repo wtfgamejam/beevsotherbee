@@ -65,20 +65,23 @@ import com.stencyl.graphics.shaders.BloomShader;
 class Design_3_3_TapToFly extends ActorScript
 {          	
 	
+public var _Flap:String;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		nameMap.set("Actor", "actor");
+		nameMap.set("Flap", "_Flap");
+nameMap.set("Actor", "actor");
 
 	}
 	
 	override public function init()
 	{
 		    
-/* ============================ Click ============================= */
-addMousePressedListener(function(list:Array<Dynamic>):Void {
-if(wrapper.enabled){
+/* =========================== Keyboard =========================== */
+addKeyStateListener(_Flap, function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void {
+if(wrapper.enabled && pressed){
         playSound(getSound(26));
         actor.setVelocity(-90, 30);
         if((Utils.DEG * (actor.getAngle()) > -90))
