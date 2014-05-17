@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<game accelFramerate="0" adsPosition="0" aheight="720" airCert="" airPass="" androidAlias="" androidCert="" androidMinVersion="0" androidPassword="" androidPublicKey="" androidTargetVersion="7" antialias="true" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="1280" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.yourname.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="0" defaultFramerate="60" defaultSceneID="0" desc="" desktopScale="1.0" desktopScaleMode="0" deviceOS="5.0" disableBackButton="false" enablePurchases="false" engine="0" format="2.0" gameid="-1" haxeExtras="" height="720" internalVersion="1" internalVersionIOS="1" kit="false" lockURL="" macBundleID="com.yourcompany.gamename" maxScaleAndroid="4.0" maxScaleDesktop="1.0" maxScaleIOS="4.0" maxScaleWeb="1.0" metroColor="-12566464" mochi="" multitouch="true" name="Bee vs Other Bee" ngID="" ngKey="" orientation="0" p12="" p12pwd="" physicsMode="0" preloaderstyle="0" products="" prov-adhoc="" prov-store="" scale="1" scaleModeAndroid="0" scaleModeDesktop="0" scaleModeIOS="0" scaleModeWeb="0" showAds="false" simulatorOS="5.0" splashStyle="0" startInFullScreenDesktop="false" startInFullScreenWeb="false" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" useGlossyIcon="false" webScale="1.0" whirlKey="" width="1280" windowsAppName="" windowsAuthor="" windowsBundleID="com.yourcompany.gamename">
+<game accelFramerate="0" adsPosition="0" aheight="720" airCert="" airPass="" androidAlias="" androidCert="" androidMinVersion="0" androidPassword="" androidPublicKey="" androidTargetVersion="7" antialias="true" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="1280" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.yourname.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="1" defaultFramerate="60" defaultSceneID="1" desc="" desktopScale="1.0" desktopScaleMode="0" deviceOS="5.0" disableBackButton="false" enablePurchases="false" engine="0" format="2.0" gameid="-1" haxeExtras="" height="720" internalVersion="1" internalVersionIOS="1" kit="false" lockURL="" macBundleID="com.yourcompany.gamename" maxScaleAndroid="4.0" maxScaleDesktop="1.0" maxScaleIOS="4.0" maxScaleWeb="1.0" metroColor="-12566464" mochi="" multitouch="true" name="Bee vs Other Bee" ngID="" ngKey="" orientation="0" p12="" p12pwd="" physicsMode="0" preloaderstyle="0" products="" prov-adhoc="" prov-store="" scale="1" scaleModeAndroid="0" scaleModeDesktop="0" scaleModeIOS="0" scaleModeWeb="0" showAds="false" simulatorOS="5.0" splashStyle="0" startInFullScreenDesktop="false" startInFullScreenWeb="false" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" useGlossyIcon="false" webScale="1.0" whirlKey="" width="1280" windowsAppName="" windowsAuthor="" windowsBundleID="com.yourcompany.gamename">
     <exts>
         <e enabled="false" id="test-native"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="label"/>
         <e enabled="false" id="test-flash"/>
+        <e enabled="false" id="label"/>
         <e enabled="false" id="tileapi"/>
     </exts>
     <scales>
@@ -17,9 +17,9 @@
     <packs/>
     <groups/>
     <cgroups>
+        <cgroup g1="0" g2="1"/>
         <cgroup g1="3" g2="3"/>
         <cgroup g1="3" g2="1"/>
-        <cgroup g1="1" g2="0"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38" vks="38"/>

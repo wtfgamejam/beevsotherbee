@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="9" extheight="800" extwidth="1344" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="85.0" height="736" id="0" name="Space Arena" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1280">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="255"/>
+    <backgrounds>
+        <ref id="5"/>
+    </backgrounds>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="13" name="Flappy Bird 1" sx="1.0" sy="1.0" x="77" y="89" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+</scene>

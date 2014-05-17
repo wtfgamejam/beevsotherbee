@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <scene-change-new comment="false" x="37" y="75">
+                            <SCENE eid="0" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0.5"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0.5"/>
+                        </scene-change-new>
+                    </group>
+                    <amousestate comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                        <int id="1" val="1"/>
+                    </amousestate>
+                </if>
+                <if comment="false" x="26" y="114">
+                    <group eventID="1" id="-1">
+                        <scene-change-new comment="false" x="37" y="147">
+                            <SCENE id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0.5"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0.5"/>
+                        </scene-change-new>
+                    </group>
+                    <amousestate comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                        <int id="1" val="1"/>
+                    </amousestate>
+                </if>
+            </group>
+            <int id="0" val="0"/>
+        </event-mouse-press-release>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
