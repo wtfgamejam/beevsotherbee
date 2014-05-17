@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="1" id="0">
-        <event-mouse-press-release comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <scene-change-new comment="false" x="26" y="42">
-                    <scenebyname comment="false" id="0" x="0" y="0">
-                        <int id="0" val=""/>
-                    </scenebyname>
-                    <int id="1" val="0"/>
-                    <int id="2" val="0.5"/>
-                    <int id="3" val="0"/>
-                    <int id="4" val="0.5"/>
-                </scene-change-new>
-            </group>
-            <int id="0" val="0"/>
-        </event-mouse-press-release>
-    </group>
-    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <repeat comment="false" x="26" y="40">
                     <group eventID="2" id="-1">
                         <create-actor3 comment="false" x="37" y="65">
-                            <ACTORTYPE id="0"/>
+                            <ACTORTYPE eid="20" id="0"/>
                             <times comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
                                     <loopindex comment="false" id="0" x="0" y="0"/>

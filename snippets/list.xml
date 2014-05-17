@@ -148,7 +148,6 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="SceneNumber" hidden="false" id="1" name="_SceneNumber" order="0"/>
         <blocks/>
         <events>
-            <event displayName="Click" enabled="true" id="1" name="event-mouse-press-release" order="1" repeats="true"/>
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
         </events>
@@ -212,5 +211,9 @@
             <event displayName="SetHUDIndex" enabled="true" id="12" name="event-custom-block" order="12" repeats="true"/>
             <event displayName="RemoveHUDIndex" enabled="true" id="13" name="event-custom-block" order="13" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_20" classname="scripts.ActorEvents_20" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" language="" name="ActorEvents_20" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>

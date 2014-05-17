@@ -41,6 +41,25 @@
             <poly data="4,0,0,50,0,50,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="true" fric="0.2" gid="3" id="20" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="21" static="false">
+        <snippets>
+            <s enabled="true" id="17">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val="No Control"/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="false"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val=""/>
+                <prop id="10" list="1" val=""/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val="false"/>
+                <prop id="13" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="21" name="Button" shared="false" width="16"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="384" id="5" name="Deep Space 2" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="395" id="4" name="f9" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="768" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="3" id="13" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Flappy Bird" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="14" static="false">
@@ -123,13 +142,13 @@
             </s>
         </snippets>
     </actor>
-    <custom-block blocktag="custom-19" blocktype="ACTION" code="" desc="Removes the given index from the HUD." global="false" gui="Remove index %0 from the HUD" id="19" message="RemoveHUDIndex" name="RemoveHUDIndex" oid="-1" return="VOID" shared="false" snippetID="16">
+    <custom-block blocktag="custom-19" blocktype="ACTION" code="sayToScene(&quot;Draw HUD&quot;, &quot;RemoveHUDIndex&quot;, ~);" desc="Removes the given index from the HUD." global="false" gui="Remove index %0 from the HUD" id="19" message="RemoveHUDIndex" name="RemoveHUDIndex" oid="-1" return="VOID" shared="false" snippetID="16">
         <blank name="Index" order="0" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-17" blocktype="NORMAL" code="" desc="Returns a created actor from the Draw HUD behavior." global="false" gui="Get HUD actor with name %0" id="17" message="ReturnHUDActor" name="ReturnHUDActor" oid="-1" return="ACTOR" shared="false" snippetID="16">
+    <custom-block blocktag="custom-17" blocktype="NORMAL" code="((sayToScene(&quot;Draw HUD&quot;, &quot;ReturnHUDActor&quot;, ~)) as Actor)" desc="Returns a created actor from the Draw HUD behavior." global="false" gui="Get HUD actor with name %0" id="17" message="ReturnHUDActor" name="ReturnHUDActor" oid="-1" return="ACTOR" shared="false" snippetID="16">
         <blank name="Name" order="0" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-18" blocktype="ACTION" code="" desc="Sets an item to the HUD." global="false" gui="Set index %1 to %0 at x: %2 y: %3 for the HUD" id="18" message="SetHUDIndex" name="SetHUDIndex" oid="-1" return="VOID" shared="false" snippetID="16">
+    <custom-block blocktag="custom-18" blocktype="ACTION" code="sayToScene(&quot;Draw HUD&quot;, &quot;SetHUDIndex&quot;, ~,~,~,~);" desc="Sets an item to the HUD." global="false" gui="Set index %1 to %0 at x: %2 y: %3 for the HUD" id="18" message="SetHUDIndex" name="SetHUDIndex" oid="-1" return="VOID" shared="false" snippetID="16">
         <blank name="Item" order="0" type="TEXT"/>
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="X" order="2" type="NUMBER"/>
