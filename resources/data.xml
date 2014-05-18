@@ -2,27 +2,37 @@
 <pack>
     <font alphabet="0123456789" atlasID="0" desc="Angry Birds font" height="41" id="29" name="Angry Birds" offsets="0|0|0|,37|0|37,60|0|60,87|0|87,112|0|112,141|0|141,170|0|170,198|0|198,225|0|225,256|0|256" oid="-1" prerendered="false" rowHeight="41" shared="false"/>
     <music atlasID="0" desc="" id="16" loop="true" name="Battle Bee" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="3" id="13" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bee" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="14" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="3" id="13" ignoreg="false" inertia="0.2" ldamp="0.0" mass="0.1" name="Bee" oid="-1" pausable="true" physicsMode="0" rest="0.75" shared="false" sprite="14" static="false">
         <snippets>
-            <s enabled="true" id="3">
-                <prop id="1" list="0" val="W"/>
+            <s enabled="true" id="1">
+                <prop id="71" list="0" val="true"/>
+                <prop id="77" list="0" val=""/>
+                <prop id="79" list="0" val=""/>
+                <prop id="72" list="0" val=""/>
+                <prop id="73" list="0" val=""/>
                 <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="21">
+                <prop id="75" list="0" val=""/>
+                <prop id="81" list="0" val="true"/>
+                <prop id="83" list="0" val="false"/>
+                <prop id="82" list="0" val="false"/>
+                <prop id="31" list="0" val="W"/>
                 <prop id="34" list="0" val="D"/>
+                <prop id="32" list="0" val="S"/>
                 <prop id="33" list="0" val="A"/>
-                <prop id="38" list="0" val="true"/>
-                <prop id="39" list="0" val="false"/>
-                <prop id="37" list="0" val="0"/>
-                <prop id="42" list="0" val=""/>
-                <prop id="43" list="0" val=""/>
-                <prop id="40" list="0" val="0.0"/>
-                <prop id="11" list="0" val="25.0"/>
-                <prop id="41" list="0" val=""/>
-                <prop id="46" list="0" val="false"/>
-                <prop id="44" list="0" val=""/>
-                <prop id="45" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="42" list="0" val="20"/>
+                <prop id="46" list="0" val="0"/>
+                <prop id="45" list="0" val="300"/>
+                <prop id="50" list="0" val="0"/>
+                <prop id="49" list="0" val="10"/>
+                <prop id="55" list="0" val="0"/>
+                <prop id="54" list="0" val="0"/>
+                <prop id="53" list="0" val="0"/>
+                <prop id="59" list="0" val="0"/>
+                <prop id="58" list="0" val="300"/>
+                <prop id="57" list="0" val="40"/>
+                <prop id="62" list="0" val="0"/>
+                <prop id="61" list="0" val="0"/>
+                <prop id="60" list="0" val="false"/>
             </s>
             <s enabled="true" id="20">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -50,7 +60,7 @@
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="35" id="14" name="Birdie" shared="false" width="50">
         <anim across="2" down="2" durations="100,100,100" height="70" id="0" loop="true" name="Flying" numframes="3" originx="25" originy="17" sync="false" version="2" width="100">
-            <poly data="4,0,0,50,0,50,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="5,4,11,4,34,44,30,48,20,32,3" density="0.1" fric="0.2" gid="-1000" id="0" name="" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="true" fric="0.2" gid="3" id="20" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="21" static="false">
@@ -146,27 +156,37 @@
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="384" id="7" name="Green Field" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="720" id="31" name="MAIN BEE THING" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1280" xpf="1.0" ypf="1.0"/>
     <music atlasID="0" desc="" id="15" loop="true" name="Main Title" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="22" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Other Bee" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="23" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="22" ignoreg="false" inertia="0.5" ldamp="0.0" mass="0.5" name="Other Bee" oid="-1" pausable="true" physicsMode="0" rest="0.75" shared="false" sprite="23" static="false">
         <snippets>
-            <s enabled="true" id="3">
-                <prop id="1" list="0" val="up"/>
+            <s enabled="true" id="1">
+                <prop id="71" list="0" val="true"/>
+                <prop id="77" list="0" val=""/>
+                <prop id="79" list="0" val=""/>
+                <prop id="72" list="0" val=""/>
+                <prop id="73" list="0" val=""/>
                 <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="21">
+                <prop id="75" list="0" val=""/>
+                <prop id="81" list="0" val="true"/>
+                <prop id="83" list="0" val="false"/>
+                <prop id="82" list="0" val="false"/>
+                <prop id="31" list="0" val="up"/>
                 <prop id="34" list="0" val="right"/>
+                <prop id="32" list="0" val="down"/>
                 <prop id="33" list="0" val="left"/>
-                <prop id="38" list="0" val="true"/>
-                <prop id="39" list="0" val="false"/>
-                <prop id="37" list="0" val="0"/>
-                <prop id="42" list="0" val=""/>
-                <prop id="43" list="0" val=""/>
-                <prop id="40" list="0" val="0.0"/>
-                <prop id="11" list="0" val="25.0"/>
-                <prop id="41" list="0" val=""/>
-                <prop id="46" list="0" val="true"/>
-                <prop id="44" list="0" val=""/>
-                <prop id="45" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="42" list="0" val="20"/>
+                <prop id="46" list="0" val="180"/>
+                <prop id="45" list="0" val="300"/>
+                <prop id="50" list="0" val="0"/>
+                <prop id="49" list="0" val="10"/>
+                <prop id="55" list="0" val="0"/>
+                <prop id="54" list="0" val="0"/>
+                <prop id="53" list="0" val="0"/>
+                <prop id="59" list="0" val="0"/>
+                <prop id="58" list="0" val="300"/>
+                <prop id="57" list="0" val="40"/>
+                <prop id="62" list="0" val="0"/>
+                <prop id="61" list="0" val="0"/>
+                <prop id="60" list="0" val="false"/>
             </s>
             <s enabled="true" id="20">
                 <prop id="2147483647" list="0" val="thisactor"/>
