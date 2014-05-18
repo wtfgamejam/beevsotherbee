@@ -65,16 +65,24 @@ import com.stencyl.graphics.shaders.BloomShader;
 class ActorEvents_13 extends ActorScript
 {          	
 	
+public var _BeeHP:Float;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("BeeHP", "_BeeHP");
+_BeeHP = 0;
+
 	}
 	
 	override public function init()
 	{
-		
+		    
+/* ======================== When Creating ========================= */
+        _BeeHP = asNumber(8);
+propertyChanged("_BeeHP", _BeeHP);
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

@@ -75,7 +75,33 @@ class Design_25_25_STABBING extends ActorScript
 	
 	override public function init()
 	{
-		
+		    
+/* ======================== Something Else ======================== */
+addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void {
+if(wrapper.enabled){
+        if((event.thisFromLeft && !event.otherFromRight))
+{
+
+}
+
+        else if((event.otherFromRight && !event.thisFromLeft))
+{
+
+}
+
+        else if((event.thisFromLeft && event.otherFromRight))
+{
+
+}
+
+        else
+{
+
+}
+
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

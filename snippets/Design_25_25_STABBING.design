@@ -1,2 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="1" id="-1"/>
+                    <and comment="false" id="0" x="0" y="0">
+                        <collision-left comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                        </collision-left>
+                        <collision-right comment="false" id="1" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <int id="1" val="1"/>
+                        </collision-right>
+                    </and>
+                </if>
+                <else-if comment="false" x="26" y="115">
+                    <group eventID="1" id="-1"/>
+                    <and comment="false" id="0" x="0" y="0">
+                        <collision-right comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </collision-right>
+                        <collision-left comment="false" id="1" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                        </collision-left>
+                    </and>
+                </else-if>
+                <else-if comment="false" x="26" y="185">
+                    <group eventID="1" id="-1"/>
+                    <and comment="false" id="0" x="0" y="0">
+                        <collision-left comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                        </collision-left>
+                        <collision-right comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </collision-right>
+                    </and>
+                </else-if>
+                <else comment="false" x="26" y="255">
+                    <group eventID="1" id="-1"/>
+                </else>
+            </group>
+        </collide>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

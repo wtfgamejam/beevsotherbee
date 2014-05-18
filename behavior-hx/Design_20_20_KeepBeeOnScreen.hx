@@ -97,7 +97,7 @@ addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Vo
 if(wrapper.enabled){
         if((actor.getY() < 0))
 {
-            actor.setY(0);
+            actor.setY(1);
 }
 
 }
