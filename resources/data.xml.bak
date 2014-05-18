@@ -10,8 +10,8 @@
                 <prop id="79" list="0" val=""/>
                 <prop id="72" list="0" val=""/>
                 <prop id="73" list="0" val=""/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="75" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="81" list="0" val="true"/>
                 <prop id="83" list="0" val="false"/>
                 <prop id="82" list="0" val="false"/>
@@ -53,14 +53,14 @@
         </snippets>
     </actor>
     <music atlasID="0" desc="" id="30" loop="true" name="Bee vs Other Bee" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="35" id="23" name="Birdie" shared="false" width="50">
-        <anim across="2" down="2" durations="100,100,100" height="70" id="0" loop="true" name="Flying" numframes="3" originx="25" originy="17" sync="false" version="2" width="100">
-            <poly data="4,0,0,50,0,50,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="50" id="23" name="Birdie" shared="false" width="60">
+        <anim across="2" down="2" durations="100,100,100" height="100" id="1" loop="true" name="Animation 1" numframes="3" originx="30" originy="25" sync="false" version="2" width="120">
+            <poly data="4,0,0,60,0,60,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="35" id="14" name="Birdie" shared="false" width="50">
-        <anim across="2" down="2" durations="100,100,100" height="70" id="0" loop="true" name="Flying" numframes="3" originx="25" originy="17" sync="false" version="2" width="100">
-            <poly data="5,4,11,4,34,44,30,48,20,32,3" density="0.1" fric="0.2" gid="-1000" id="0" name="" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="50" id="14" name="Birdie" shared="false" width="60">
+        <anim across="2" down="2" durations="100,100,100" height="100" id="1" loop="true" name="Animation 1" numframes="3" originx="30" originy="25" sync="false" version="2" width="120">
+            <poly data="4,0,0,60,0,60,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="true" fric="0.2" gid="3" id="20" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="21" static="false">
@@ -164,8 +164,8 @@
                 <prop id="79" list="0" val=""/>
                 <prop id="72" list="0" val=""/>
                 <prop id="73" list="0" val=""/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="75" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="81" list="0" val="true"/>
                 <prop id="83" list="0" val="false"/>
                 <prop id="82" list="0" val="false"/>
