@@ -5,20 +5,30 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
-                        <control-sound-channel comment="false" x="37" y="65">
+                        <if comment="false" x="37" y="65">
+                            <group eventID="1" id="-1">
+                                <control-sound-channel comment="false" x="48" y="90">
+                                    <int id="0" val="0"/>
+                                    <get-val-22-1 comment="false" id="1" x="0" y="0"/>
+                                </control-sound-channel>
+                            </group>
+                            <get-val-22-2 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <play-sound-channel comment="false" x="37" y="134">
                             <int id="0" val="0"/>
-                            <get-val-22-1 comment="false" id="1" x="0" y="0"/>
-                        </control-sound-channel>
+                            <SOUND eid="var" id="1" vid="3"/>
+                            <get-val-22-1 comment="false" id="2" x="0" y="0"/>
+                        </play-sound-channel>
                     </group>
-                    <get-val-22-2 comment="false" id="0" x="0" y="0"/>
+                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <play-sound-channel comment="false" x="26" y="109">
-                    <int id="0" val="0"/>
-                    <SOUND eid="var" id="1" vid="3"/>
-                    <get-val-22-1 comment="false" id="2" x="0" y="0"/>
-                </play-sound-channel>
             </group>
         </init>
+    </group>
+    <group eventID="1" id="1">
+        <set-game-val-0 comment="false" x="590" y="161">
+            <int id="0" val=""/>
+        </set-game-val-0>
     </group>
     <group eventID="1" id="-1"/>
 </groups>

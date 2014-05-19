@@ -11,25 +11,29 @@
                         <die comment="false" x="37" y="99">
                             <ACTOR eid="2" id="0"/>
                         </die>
-                        <play-sound4 comment="false" x="37" y="126">
+                        <set-game-val-0 comment="false" x="37" y="126">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-0>
+                        <play-sound4 comment="false" x="37" y="151">
                             <int id="0" val="0"/>
-                            <SOUND eid="26" id="1"/>
+                            <SOUND eid="33" id="1"/>
                         </play-sound4>
-                        <scene-reload-new comment="false" x="37" y="153">
-                            <int id="0" val="0"/>
-                            <int id="1" val="1"/>
-                            <int id="2" val="0"/>
-                            <int id="3" val="0.1"/>
-                        </scene-reload-new>
+                        <scene-change-new comment="false" x="37" y="178">
+                            <SCENE eid="2" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0.2"/>
+                        </scene-change-new>
                     </group>
                     <lesseq comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </lesseq>
                 </if>
-                <else comment="false" x="26" y="192">
+                <else comment="false" x="26" y="217">
                     <group eventID="1" id="-1">
-                        <incdec comment="false" x="37" y="212">
+                        <incdec comment="false" x="37" y="237">
                             <int id="0" val="1"/>
                             <int id="1" val="1"/>
                             <int id="2" val="1"/>
@@ -46,7 +50,7 @@
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <set-val-9-1 comment="false" x="26" y="40">
-                    <int id="0" val="30"/>
+                    <int id="0" val="45"/>
                 </set-val-9-1>
             </group>
         </init>

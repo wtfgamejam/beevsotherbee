@@ -150,9 +150,11 @@
         <tile collision="1" data="" durations="100" frames="64" id="64" order="-1"/>
         <tile collision="1" data="" durations="100" frames="65" id="65" order="-1"/>
     </tileset>
+    <music atlasID="0" desc="" id="32" loop="true" name="Choose Your Bee" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="384" id="5" name="Deep Space 2" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="395" id="4" name="f9" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="768" xpf="1.0" ypf="1.0"/>
     <music atlasID="0" desc="" id="26" loop="true" name="Flap" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="33" loop="true" name="FUCKIT" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="384" id="7" name="Green Field" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="720" id="31" name="MAIN BEE THING" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1280" xpf="1.0" ypf="1.0"/>
     <music atlasID="0" desc="" id="15" loop="true" name="Main Title" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>

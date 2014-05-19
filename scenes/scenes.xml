@@ -3,4 +3,5 @@
     <scene desc="" format="1.0" id="0" name="Space"/>
     <scene desc="" format="1.0" id="1" name="Main Menu"/>
     <scene desc="" format="1.0" id="2" name="Character Select"/>
+    <scene desc="" format="1.0" id="3" name="Music Blank"/>
 </scenes>
