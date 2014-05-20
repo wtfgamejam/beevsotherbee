@@ -25,10 +25,5 @@
             </group>
         </init>
     </group>
-    <group eventID="1" id="1">
-        <set-game-val-0 comment="false" x="590" y="161">
-            <int id="0" val=""/>
-        </set-game-val-0>
-    </group>
     <group eventID="1" id="-1"/>
 </groups>

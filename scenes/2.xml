@@ -4,7 +4,9 @@
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
     <color-bg blue="204" green="255" red="204"/>
-    <backgrounds/>
+    <backgrounds>
+        <ref id="34"/>
+    </backgrounds>
     <foregrounds/>
     <joints/>
     <regions/>

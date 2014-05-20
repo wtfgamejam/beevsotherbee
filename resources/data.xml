@@ -10,8 +10,8 @@
                 <prop id="79" list="0" val=""/>
                 <prop id="72" list="0" val=""/>
                 <prop id="73" list="0" val=""/>
-                <prop id="75" list="0" val=""/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="75" list="0" val=""/>
                 <prop id="81" list="0" val="true"/>
                 <prop id="83" list="0" val="false"/>
                 <prop id="82" list="0" val="false"/>
@@ -37,22 +37,14 @@
             <s enabled="true" id="20">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="23">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="28" name="Bee Health" shared="false" width="16"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="24" fixedrot="false" fric="0.2" gid="3" id="27" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bee Health" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="28" static="false">
-        <snippets>
-            <s enabled="true" id="23">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <music atlasID="0" desc="" id="30" loop="true" name="Bee vs Other Bee" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="736" id="34" name="BEEEEEEEEEEEEEEEEEEEs" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1280" xpf="1.0" ypf="1.0"/>
     <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="50" id="23" name="Birdie" shared="false" width="60">
         <anim across="2" down="2" durations="100,100,100" height="100" id="1" loop="true" name="Animation 1" numframes="3" originx="30" originy="25" sync="false" version="2" width="120">
             <poly data="4,0,0,60,0,60,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
@@ -158,7 +150,7 @@
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="384" id="7" name="Green Field" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="720" id="31" name="MAIN BEE THING" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1280" xpf="1.0" ypf="1.0"/>
     <music atlasID="0" desc="" id="15" loop="true" name="Main Title" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="22" ignoreg="false" inertia="0.5" ldamp="0.0" mass="0.5" name="Other Bee" oid="-1" pausable="true" physicsMode="0" rest="0.75" shared="false" sprite="23" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="22" ignoreg="false" inertia="0.2" ldamp="0.0" mass="0.1" name="Other Bee" oid="-1" pausable="true" physicsMode="0" rest="0.75" shared="false" sprite="23" static="false">
         <snippets>
             <s enabled="true" id="1">
                 <prop id="71" list="0" val="true"/>
@@ -166,8 +158,8 @@
                 <prop id="79" list="0" val=""/>
                 <prop id="72" list="0" val=""/>
                 <prop id="73" list="0" val=""/>
-                <prop id="75" list="0" val=""/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="75" list="0" val=""/>
                 <prop id="81" list="0" val="true"/>
                 <prop id="83" list="0" val="false"/>
                 <prop id="82" list="0" val="false"/>

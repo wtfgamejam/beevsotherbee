@@ -3,8 +3,8 @@
     <exts>
         <e enabled="false" id="test-native"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="label"/>
+        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="tileapi"/>
     </exts>
     <scales>
@@ -65,7 +65,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="13,20,22,27,24,25,4,5,6,7,31,29,15,16,26,30,32,33," name="Main Atlas" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="13,20,22,27,24,25,4,5,6,7,31,34,29,15,16,26,30,32,33," name="Main Atlas" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
