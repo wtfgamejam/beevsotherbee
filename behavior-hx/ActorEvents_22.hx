@@ -62,42 +62,19 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_22_22_PlaySound extends SceneScript
+class ActorEvents_22 extends ActorScript
 {          	
 	
-public var _Channel:Float;
-
-public var _StopChannelFirst:Bool;
-
-public var _SoundtoPlay:Sound;
-
  
- 	public function new(dummy:Int, engine:Engine)
+ 	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
-		super(engine);
-		nameMap.set("Channel", "_Channel");
-_Channel = 0.0;
-nameMap.set("Stop Channel First", "_StopChannelFirst");
-_StopChannelFirst = true;
-nameMap.set("Sound to Play", "_SoundtoPlay");
-
+		super(actor, engine);	
+		
 	}
 	
 	override public function init()
 	{
-		    
-/* ======================== When Creating ========================= */
-        if(getGameAttribute("FirstTime"))
-{
-            if(_StopChannelFirst)
-{
-                stopSoundOnChannel(Std.int(_Channel));
-}
-
-            playSoundOnChannel(_SoundtoPlay, Std.int(_Channel));
-}
-
-
+		
 	}	      	
 	
 	override public function forwardMessage(msg:String)

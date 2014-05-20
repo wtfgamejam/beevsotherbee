@@ -15,4 +15,28 @@
         </event-mouse-press-release>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="109" y="56">
+            <group eventID="2" id="-1">
+                <if comment="false" x="120" y="81">
+                    <group eventID="2" id="-1">
+                        <control-sound-channel comment="false" x="131" y="111">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                        </control-sound-channel>
+                        <play-sound-channel comment="false" x="131" y="138">
+                            <int id="0" val="0"/>
+                            <SOUND eid="15" id="1"/>
+                            <int id="2" val="0"/>
+                        </play-sound-channel>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <false comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>

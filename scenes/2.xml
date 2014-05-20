@@ -14,7 +14,7 @@
     <actors/>
     <snippets>
         <s enabled="true" id="22">
-            <prop id="1" list="0" val="1.0"/>
+            <prop id="1" list="0" val="1"/>
             <prop id="2" list="0" val="true"/>
             <prop id="3" list="0" val="32"/>
         </s>
